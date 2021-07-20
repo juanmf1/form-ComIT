@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario ComIT</title>
+</head>
+<body>
+    <header class="header">
+        <p class="logo"><a href="index.html">Com<span>IT</span></a></p>
+        <button class="login">LogIn</button>
+    </header>
+    <main>
+        <section>
+            <h2 class="titulo">Formulario de <span>inscripción</span></h2>
+            <form action="https://formspree.io/f/xdoyzgvl" class="form" method="POST">
+                <input type="text" class="nombre" name="nombre" placeholder="Nombre/s" required>
+                <input type="text" class="apellido" name="apellido" placeholder="Apellido/s" required>
+                <input type="email" class="email" name="email" placeholder="Email" required>
+                <input type="text" class="telefono" name="telefono" placeholder="Teléfono" required>
+                <label for="trabajo">· Puesto de trabajo actual:</label>
+                <input type="text" name="trabajo" class="" required>
+                <div class="input-radio">
+                    <label for="estudio">· Nivel de estudios:</label>
+                    <div class="primario">
+                        <input type="radio" name="estudio" class="primario" value="primario" required>
+                        <label for="">Primario</label>
+                    </div>
+                    <div class="secundario">
+                        <input type="radio" name="estudio" class="secundario" value="secundario">
+                        <label for="">Secundario</label>
+                    </div>
+                    <div class="terciario">
+                        <input type="radio" name="estudio" class="terciario" value="terciario">
+                        <label for="">Terciario</label>
+                    </div>
+                    <div class="universitario">
+                        <input type="radio" name="estudio" class="universitario" value="universitario">
+                        <label for="">Universitario</label>
+                    </div>
+                </div>
+                <label for="cursada">· Elegi días de cursada:</label>
+                <select id="cursada" name="cursada" required>
+                  <option value="" disabled selected></option>
+                  <option value="lunes-jueves">Lunes y Jueves</option>
+                  <option value="martes-viernes">Martes y Viernes</option>
+                </select>
+                <label for="horario">· Elegi turno:</label>
+                <select id="horario" name="horario" required>
+                  <option value="" disabled selected></option>
+                  <option value="mañana">Mañana</option>
+                  <option value="tarde">Tarde</option>
+                  <option value="noche">Noche</option>
+                </select>
+                <input type="submit" class="boton-submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="contenedor-p">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi quas quod quasi nostrum, at similique adipisci et sapiente eveniet! Perspiciatis enim architecto maiores, in totam eligendi sapiente sequi eos similique?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim incidunt animi cumque est commodi autem ullam nesciunt minus repellat perspiciatis sequi illum quisquam ad totam quas, maiores in iusto esse.</p>
+        </div>
+    </footer>
+</body>
+</html>
